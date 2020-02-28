@@ -1,0 +1,82 @@
+.Figure-Right {
+  position: absolute;
+  top: 7VH;
+  height: 20VH;
+  right: 0VW;
+  width: 45VW;
+  background-color: #ED145B;
+  border-radius: 100px 0 0 100px;
+  z-index: -9;
+}
+
+.Figure-Left {
+  position: absolute;
+  top: 22VH;
+  height: 20VH;
+  left: 0VW;
+  width: 50VW;
+  background-color: #ED145B;
+  border-radius: 0 100px 100px 0;
+  z-index: -9;
+}
+
+.Name {
+  position: absolute;
+  top: 3VH;
+  left: 3VW;
+  color: #1F2A44;
+  font-size: 10VW;
+  width: 25VW;
+  height: 30VH;
+}
+
+.Title {
+  width: 100VW;
+  text-align: center;
+  position: absolute;
+  color: #1F2A44;
+  top: 30VH;
+  font-size: 12VW;
+}
+
+.Button {
+  top: 50VH;
+  left: 15VW;
+  position: absolute;
+  width: 70VW;
+  height: 15VH;
+  background-color: #63B1BC;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 10VW;
+  line-height: 14VH;
+  color: white;
+}
+
+@media(min-width: 850px){
+  .Figure-Right {
+    top: 10VH;
+    width: 300px;
+    height: 250px;
+    border-radius: 100VW 0 0 100VW;
+  }
+  .Figure-Left {
+    top: 50VH;
+    width: 350px;
+    height: 250px;
+    border-radius: 0 100VW 100VW 0;
+  }
+  .Name {
+    font-size: 3VW;
+  }
+  .Title {
+    font-size: 6VW;
+    top: calc(50VH - 6VW);
+  }
+  .Button {
+    top: 60VH;
+    left: 35VW;
+    width: 30VW;
+    font-size: 5VW;
+  }
+}
