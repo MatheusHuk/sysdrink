@@ -134,7 +134,6 @@ export const Box = styled.div`
     top: ${props => props.start ? '20VH' : '40VH'};
     width: 100VW;
     height: 60VH;
-    background-color: white;
     z-index: -10;
     transition: top 1s;
 `;
