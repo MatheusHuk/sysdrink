@@ -7,7 +7,7 @@ function App() {
   const [start, setStart] = useState(false);
 
   const initiate = () => {
-    setStart(true);
+    setStart(!start);
   }
 
   return (
@@ -16,7 +16,10 @@ function App() {
       <Style.FigureRight start={start}/>
       <Style.FigureLeft start={start}/>
       <Style.Title start={start}>SysDrink&Food</Style.Title>
-      <Style.Button onClick={initiate}>Iniciar</Style.Button>
+      <Style.Welcome>Bem vindo!</Style.Welcome>
+      <Style.Greetings>Como é bom tê-lo conosco!</Style.Greetings>
+      <Style.Button start={start} onClick={initiate}>Iniciar</Style.Button>
+      <Style.Box start={start}></Style.Box>
     </>
   );
 }
